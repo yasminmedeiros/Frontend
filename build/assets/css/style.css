@@ -1,0 +1,7 @@
+.search-toggle {
+    background: url("../img/search.svg") center/22px no-repeat;
+}
+
+.search-toggle.active {
+    background: url("../img/close.svg") center/22px no-repeat;
+}
