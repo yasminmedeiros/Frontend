@@ -1,5 +1,5 @@
 import { Control, Layer } from 'leaflet';
-import React, { ForwardRefExoticComponent, ReactNode, RefAttributes, StatelessComponent } from 'react';
+import React, { ForwardRefExoticComponent, FunctionComponent, ReactNode, RefAttributes } from 'react';
 export interface LayersControlProps extends Control.LayersOptions {
     children?: ReactNode;
 }
@@ -11,8 +11,8 @@ export interface ControlledLayerProps {
     name: string;
 }
 export declare const LayersControl: ForwardRefExoticComponent<LayersControlProps & RefAttributes<Control.Layers>> & {
-    BaseLayer: StatelessComponent<ControlledLayerProps>;
-    Overlay: StatelessComponent<ControlledLayerProps>;
+    BaseLayer: FunctionComponent<ControlledLayerProps>;
+    Overlay: FunctionComponent<ControlledLayerProps>;
 };
 declare type AddLayerFunc = (layersControl: Control.Layers, layer: Layer, name: string) => void;
 export declare function createControlledLayer(addLayerToControl: AddLayerFunc): (props: ControlledLayerProps) => JSX.Element | null;

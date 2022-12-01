@@ -127,7 +127,7 @@ function getMainBundleInfo() {
         '- using CommonJS with `require(\'plotly.js\')`',
         '',
         'If you would like to have access to the attribute meta information ' +
-        '(including attribute descriptions as on the [schema reference page](https://plot.ly/javascript/reference/)), ' +
+        '(including attribute descriptions as on the [schema reference page](https://plotly.com/javascript/reference/)), ' +
         'use dist file `dist/plotly-with-meta.js`',
         '',
         'The main plotly.js bundle weights in at:',
@@ -142,7 +142,10 @@ function getMainBundleInfo() {
         '',
         constants.partialBundlePaths.map(makeBundleHeaderInfo).join('\n'),
         '',
-        'Starting in `v1.39.0`, each plotly.js partial bundle has a corresponding npm package with no dependencies.'
+        'Starting in `v1.39.0`, each plotly.js partial bundle has a corresponding npm package with no dependencies.',
+        '',
+        'Starting in `v1.50.0`, the minified version of each partial bundle is also published to npm in a separate "dist min" package.',
+        ''
     ];
 }
 
@@ -207,6 +210,13 @@ function makeBundleInfo(pathObj) {
         'CommonJS usage:',
         '```js',
         'var Plotly = require(\'' + pkgName + '\');',
+        '```',
+        '',
+        '#### dist min npm package (starting in `v1.50.0`)',
+        '',
+        'Install [`' + pkgName + '-min`](https://www.npmjs.com/package/' + pkgName + '-min) with',
+        '```',
+        'npm install ' + pkgName + '-min',
         '```',
         '',
         '#### Other plotly.js entry points',

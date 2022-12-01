@@ -5,4 +5,4 @@ export interface CircleMarkerProps extends CircleMarkerOptions, PathProps {
     center: LatLngExpression;
     children?: ReactNode;
 }
-export declare function updateCircle(layer: LeafletCircleMarker, props: CircleMarkerProps, prevProps: CircleMarkerProps): void;
+export declare function updateCircle<P extends CircleMarkerProps = CircleMarkerProps>(layer: LeafletCircleMarker, props: P, prevProps: P): void;

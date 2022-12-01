@@ -12,8 +12,6 @@ function omitPane(obj, pane) {
 }
 
 function createPane(props, context) {
-  var _props$pane;
-
   const name = props.name;
 
   if (DEFAULT_PANES.indexOf(name) !== -1) {
@@ -24,7 +22,7 @@ function createPane(props, context) {
     throw new Error(`A pane with this name already exists: ${name}`);
   }
 
-  const parentPaneName = (_props$pane = props.pane) != null ? _props$pane : context.pane;
+  const parentPaneName = props.pane ?? context.pane;
   const parentPane = parentPaneName ? context.map.getPane(parentPaneName) : undefined;
   const element = context.map.createPane(name, parentPane);
 

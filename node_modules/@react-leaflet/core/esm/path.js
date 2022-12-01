@@ -7,9 +7,7 @@ export function usePathOptions(element, props) {
   const optionsRef = useRef();
   useEffect(function updatePathOptions() {
     if (props.pathOptions !== optionsRef.current) {
-      var _props$pathOptions;
-
-      const options = (_props$pathOptions = props.pathOptions) != null ? _props$pathOptions : {};
+      const options = props.pathOptions ?? {};
       element.instance.setStyle(options);
       optionsRef.current = options;
     }
