@@ -1,0 +1,100 @@
+.content-area {
+  max-width: 1200px !important;
+  margin: 0 auto;
+}
+
+.container-fluid {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.card-box {
+  min-height: 390px !important;
+  border-radius: 15px;
+}
+
+.map, .table {
+  min-height: 488px;
+  border-radius: 15px;
+}
+
+.box {
+  display: flex !important;
+  width: 100%;
+}
+
+.input-card-box {
+  max-height: 280px;
+  border-radius: 15px;
+}
+
+.input-card-box form {
+  display: flex;
+  flex-direction: column;
+}
+
+.checklist-box {
+  display: flex;
+  align-self: flex-start;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0 0 20px 0;
+  padding: 0;
+}
+
+.checklist-box .form-label span {
+  font: 0.9rem Quicksand;
+}
+
+.checklist-box .form-label {
+  margin: 0;
+  padding: 0;
+}
+
+.box {
+  box-shadow: 0px 1px 22px -12px #607d8b;
+  background-color: #fff;
+  padding: 25px 35px 35px 35px !important;
+}
+
+.map.box, .table.box {
+  box-shadow: 0px 1px 22px -12px #607d8b;
+  background-color: #fff;
+  padding: 25px 35px 55px 35px !important;
+}
+
+.box svg {
+  overflow: visible;
+}
+
+.box-bottom-red {
+  border-bottom: solid;
+  border-image: linear-gradient(45deg, rgb(254, 103, 178), rgb(255, 214, 128)) 1;
+}
+
+.box-bottom-purple {
+  border-bottom: solid;
+  border-image: linear-gradient(45deg, rgb(157, 97, 253), rgb(255, 216, 219)) 1;
+}
+.box-bottom-blue {
+  border-bottom: solid;
+  border-image: linear-gradient(45deg, rgb(136, 133, 247), rgb(167, 216, 255)) 1;
+}
+
+.tabela {
+  display: flex;
+}
+
+
+.administration-type {
+  margin: 0 !important;
+  margin-block: 20px !important;
+}
+
+.administration-type .basic-single {
+  width: 200px;
+  left: 0 !important;
+}

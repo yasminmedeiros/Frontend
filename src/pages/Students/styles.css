@@ -1,0 +1,20 @@
+.card-box {
+    min-height: 390px !important;
+    border-radius: 15px;
+}
+
+.box {
+    box-shadow: 0px 1px 22px -12px #607d8b;
+    background-color: #fff;
+    padding: 25px 35px 35px 35px !important;
+}
+
+.administration-type {
+    margin: 0 !important;
+    margin-block: 20px !important;
+  }
+  
+  .administration-type .basic-single {
+    width: 200px;
+    left: 0 !important;
+  }

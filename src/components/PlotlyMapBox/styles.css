@@ -1,0 +1,44 @@
+#plotly {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.spinner-plot {
+    margin-top: 50px;
+}
+
+.svg-container {
+    position: absolute !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.js-plotly-plot .plotly .modebar {
+    position: absolute;
+    top: 2px;
+    right: 100px !important;
+}
+
+.mapboxgl-canvas-container.mapboxgl-interactive .mapboxgl-touch-drag-pan 
+.mapboxgl-touch-zoom-rotate {
+    min-width: 1400px !important;
+}
+
+.mapboxgl-map {
+    left: 0 !important;
+}
+
+.g-gtitle {
+    font-size: 18px !important;
+}
+
+@media (max-width: 600px) {    
+
+    .mapboxgl-canvas-container.mapboxgl-interactive .mapboxgl-touch-drag-pan 
+    .mapboxgl-touch-zoom-rotate {
+        min-width: 140px;
+    }
+}
